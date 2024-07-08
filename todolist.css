@@ -2,17 +2,34 @@
     margin: 0;
 }
 h1{
+    width: 1370px;
     font-size: 80px;
     text-align: center;
+    margin: auto;
 }
 form{
-    width: 100%;
+    width: 1370px;
     position: relative;
+    margin: auto;
 }
 input{
     width: 800px;
     height: 50px;
     position: absolute;
-    left: 400px;
-    top: 100px;
+    left: 200px;
+    top: 30px;
+    padding-left:20px ;
+    border-radius: 10px;
+    font-size: 20px;
+    outline: none;
+}
+button{
+    position: absolute;
+    left: 1030px;
+    top: 27px;
+    width: 150px;
+    height: 60px;
+    font-size: 30px;
+    border-radius: 10px;
+    cursor: pointer;
 }
