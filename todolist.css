@@ -37,3 +37,6 @@ button{
     background-color: #7293ff;
     color: #fff;
 }
+li{
+    list-style: none;
+}
