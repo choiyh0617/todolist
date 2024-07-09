@@ -1,6 +1,6 @@
 const form = document.querySelector('form');
-const ul = document.querySelector('ul');
 const input = document.querySelector('input');
+const detail = document.querySelector('.detail')
 form.addEventListener('submit',(event)=>{
     event.preventDefault();
     console.log(input.value);
