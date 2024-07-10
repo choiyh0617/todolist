@@ -1,8 +1,16 @@
 const form = document.querySelector('form');
-const input = document.querySelector('#input');
+const input = document.querySelector('input');
 const ch = document.querySelector('.ch');
 const detail = document.querySelector('.detail');
-const ex = document.querySelector('#ex');
+const del = document.querySelector('.del');
+
+form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    console.log(input.value);
+    const li = document.createElement('li');
+    li.innerText = input.value;
+    ul.appendChild(li);
+});
 
 function checked() {
     if (ch.checked) {
