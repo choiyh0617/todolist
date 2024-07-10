@@ -7,10 +7,12 @@ const del = document.querySelector('.del');
 
 form.addEventListener('submit', (event) => {
     event.preventDefault();
-    console.log(input.value);
     const div = document.createElement('div');
-    div.innerText = input.value;
-    ex.appendChild(div);
+    const txt = document.createTextNode(input.value);
+    div.appendChild(txt);
+    document.body.appendChild(ch);
+    document.body.appendChild(div);
+    document.body.appendChild(del);
 });
 
 ch.addEventListener('change', checked);
@@ -22,7 +24,7 @@ function checked() {
     }
 }
 del.addEventListener('click',()=>{
-    detail.innerText=' '
-    ch.innerHTML=' '
-    del.innerHTML=' '
+    detail.remove()
+    ch.remove()
+    del.remove()
 })
