@@ -1,4 +1,5 @@
 const form = document.querySelector('form');
+const ex = document.querySelector('#ex');
 const input = document.querySelector('input');
 const ch = document.querySelector('.ch');
 const detail = document.querySelector('.detail');
@@ -9,10 +10,10 @@ form.addEventListener('submit', (event) => {
     console.log(input.value);
     const div = document.createElement('div');
     div.innerText = input.value;
-    ch.innerHTML = 
-    ul.appendChild(li);
+    ex.appendChild(div);
 });
 
+ch.addEventListener('change', checked);
 function checked() {
     if (ch.checked) {
         detail.style.textDecoration = 'line-through';
