@@ -21,3 +21,8 @@ function checked() {
         detail.style.textDecoration = 'none';
     }
 }
+del.addEventListener('click',()=>{
+    detail.innerText=' '
+    ch.innerHTML=' '
+    del.innerHTML=' '
+})
