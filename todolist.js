@@ -8,9 +8,14 @@ const del = document.querySelector('.del');
 form.addEventListener('submit', (event) => {
     event.preventDefault();
     const div = document.createElement('div');
+    const newdel = document.createElement('button');
+    const newch = document.createElement('checkbox');
     const txt = document.createTextNode(input.value);
+    const chtxt = document.createTextNode('삭제');
     div.appendChild(txt);
-    document.body.appendChild(ch);
+    newdel.appendChild(chtxt);
+    newch.className += 'ch';
+    document.body.appendChild(newdel);
     document.body.appendChild(div);
     document.body.appendChild(del);
 });
