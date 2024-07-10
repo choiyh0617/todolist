@@ -1,6 +1,9 @@
 *{
     margin: 0;
 }
+body{
+    position: relative;
+}
 h1{
     width: 1370px;
     font-size: 80px;
@@ -41,8 +44,13 @@ form{
     color: #fff;
 }
 main{
-    width: 100%;
-    margin: 150px 0px 0px 590px;
+    position: absolute;
+    position: relative;
+    top: 150px;
+}
+#ex > div{
+    position: absolute;
+    left: 590px;
 }
 .list{
     position: relative;
