@@ -3,6 +3,7 @@ const input = document.querySelector('input');
 const ch = document.querySelector('.ch');
 const detail = document.querySelector('.detail');
 const del = document.querySelector('.del');
+const div = document.querySelector('.ti')
 
 form.addEventListener('submit', (event) => {
     event.preventDefault();
@@ -36,7 +37,8 @@ function checked() {
 }
 
 del.addEventListener('click',()=>{
-    detail.remove();
-    ch.remove();
-    del.remove();
+    // detail.remove();
+    // ch.remove();
+    // del.remove();
+    div.remove();
 })
