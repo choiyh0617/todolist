@@ -52,6 +52,9 @@ main{
     position: absolute;
     left: 590px;
 }
+.ti{
+    margin-bottom: 20px;
+}
 .list{
     position: relative;
 }

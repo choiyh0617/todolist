@@ -1,23 +1,29 @@
 const form = document.querySelector('form');
 const input = document.querySelector('input');
+const main = document.querySelector('main')
 const ch = document.querySelector('.ch');
 const detail = document.querySelector('.detail');
 const del = document.querySelector('.del');
 
 form.addEventListener('submit', (event) => {
     event.preventDefault();
+    const div = document.createElement('div');
     const span = document.createElement('span');
     const newdel = document.createElement('button');
-    const newch = document.createElement('checkbox');
+    const newch = document.createElement('input');
+    newch.type = 'checkbox'
     const txt = document.createTextNode(input.value);
-    const chtxt = document.createTextNode('삭제');
-    span.appendChild(txt);
-    newdel.appendChild(chtxt);
+    const deltxt= document.createTextNode('삭제');
     newch.className += 'ch';
     newdel.className += 'del';
     span.className +='detail';
-    document.body.appendChild(span);
-    document.body.appendChild(newdel);
+    span.appendChild(txt);
+    newdel.appendChild(deltxt);
+    div.appendChild(newch);
+    div.appendChild(span);
+    div.appendChild(newdel);
+    div.className += 'ti';
+    document.body.appendChild(div);
     input.value = ''
 })
 
