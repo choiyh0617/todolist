@@ -1,9 +1,5 @@
 const form = document.querySelector('form');
 const input = document.querySelector('input');
-const ch = document.querySelector('.ch');
-const detail = document.querySelector('.detail');
-const del = document.querySelector('.del');
-const div = document.querySelector('.ti')
 
 form.addEventListener('submit', (event) => {
     event.preventDefault();
@@ -25,7 +21,13 @@ form.addEventListener('submit', (event) => {
     div.className += 'ti';
     document.body.appendChild(div);
     input.value = ''
+    document.body.appendChild('/n')
 })
+
+const del = document.querySelector('.del');
+const ch = document.querySelector('.ch');
+const div = document.querySelector('.ti');
+const detail = document.querySelector('.detail');
 
 ch.addEventListener('change', checked);
 function checked() {
@@ -37,8 +39,5 @@ function checked() {
 }
 
 del.addEventListener('click',()=>{
-    // detail.remove();
-    // ch.remove();
-    // del.remove();
     div.remove();
 })
