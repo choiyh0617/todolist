@@ -73,6 +73,10 @@ inputBtn.addEventListener("click", (event) => {
   }
 });
 
+const ch = document.querySelector(".ch");
+const detail = document.querySelector('.detail');
+const del = document.querySelector('.del');
+
 ch.addEventListener("change", checked);
 del.addEventListener("click", () => {
   div.remove();
