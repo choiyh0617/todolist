@@ -60,6 +60,7 @@ main{
 .ti{
     top: 200px;
     left: 380px;
+    margin-bottom: 10px;
 }
 
 .list{
@@ -73,7 +74,10 @@ main{
 }
 
 .detail{
-    font-size: 40px;
+    font-size: 25px;
+    display:inline-block;
+    word-break: break-all;
+    width: 680px;
 }
 
 .del{
