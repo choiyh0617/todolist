@@ -1,6 +1,5 @@
 const form = document.querySelector('form');
 const input = document.querySelector('input');
-const main = document.querySelector('main')
 const ch = document.querySelector('.ch');
 const detail = document.querySelector('.detail');
 const del = document.querySelector('.del');
