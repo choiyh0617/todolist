@@ -70,12 +70,12 @@ inputBtn.addEventListener("click", (event) => {
 
     list.appendChild(div);
     input.value = "";
-
-    ch.addEventListener("change", checked);
-    del.addEventListener("click", () => {
-      div.remove();
-    });
   }
+});
+
+ch.addEventListener("change", checked);
+del.addEventListener("click", () => {
+  div.remove();
 });
 
 function checked(event) {
