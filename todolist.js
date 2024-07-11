@@ -70,12 +70,12 @@ inputBtn.addEventListener("click", (event) => {
 
     list.appendChild(div);
     input.value = "";
-  }
-});
 
-const checkboxes = document.querySelectorAll(".ch");
-checkboxes.forEach((checkbox) => {
-  checkbox.addEventListener("change", checked);
+    ch.addEventListener("change", checked);
+    del.addEventListener("click", () => {
+      div.remove();
+    });
+  }
 });
 
 function checked(event) {
@@ -86,10 +86,3 @@ function checked(event) {
     detail.style.textDecoration = "none";
   }
 }
-
-const deleteButtons = document.querySelectorAll(".del");
-deleteButtons.forEach((button) => {
-  button.addEventListener("click", () => {
-    button.parentElement.remove();
-  });
-});
