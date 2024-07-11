@@ -21,7 +21,6 @@ form.addEventListener('submit', (event) => {
     div.className += 'ti';
     document.body.appendChild(div);
     input.value = '';
-    document.body.appendChild('/n');
 })
 
 const del = document.querySelector('.del');
