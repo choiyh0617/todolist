@@ -7,7 +7,7 @@ form.addEventListener('submit', (event) => {
     const span = document.createElement('span');
     const newdel = document.createElement('button');
     const newch = document.createElement('input');
-    newch.type = 'checkbox'
+    newch.type = 'checkbox';
     const txt = document.createTextNode(input.value);
     const deltxt= document.createTextNode('삭제');
     newch.className += 'ch';
@@ -20,8 +20,8 @@ form.addEventListener('submit', (event) => {
     div.appendChild(newdel);
     div.className += 'ti';
     document.body.appendChild(div);
-    input.value = ''
-    document.body.appendChild('/n')
+    input.value = '';
+    document.body.appendChild('/n');
 })
 
 const del = document.querySelector('.del');
