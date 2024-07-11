@@ -1,23 +1,28 @@
 *{
     margin: 0;
 }
+
 body{
     position: relative;
 }
+
 h1{
     width: 1370px;
     font-size: 80px;
     text-align: center;
     margin: 100px auto 0px auto;
 }
+
 header{
     width: 100%;
 }
+
 form{
     width: 1370px;
     position: relative;
     margin: auto;
 }
+
 #input{
     width: 800px;
     height: 50px;
@@ -30,6 +35,7 @@ form{
     outline: none;
     border: 1px solid #000;
 }
+
 #al{
     position: absolute;
     left: 1030px;
@@ -43,20 +49,19 @@ form{
     background-color: #7293ff;
     color: #fff;
 }
+
 main{
     position: absolute;
     position: relative;
     top: 150px;
 }
-#ex > div{
-    position: absolute;
-    left: 590px;
-}
+
 .ti{
     position: absolute;
     top: 200px;
-    left: 590px;
+    left: 380px;
 }
+
 .list{
     position: relative;
 }
