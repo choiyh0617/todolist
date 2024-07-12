@@ -4,6 +4,7 @@
 
 body{
     position: relative;
+    background-color: #f7c0f4;
 }
 
 h1{
@@ -34,7 +35,6 @@ form{
     font-size: 20px;
     outline: none;
     border: none;
-    box-shadow: 1px 1px 10px 2px #ababab;
 }
 
 #al{
@@ -48,7 +48,6 @@ form{
     cursor: pointer;
     border: none;
     color: #000;
-    box-shadow: 1px 1px 10px 2px #8d8d8d;
 }
 
 main{
@@ -58,10 +57,11 @@ main{
 }
 
 .ti{
+    width: 960px;
     margin-bottom: 10px;
     border-radius: 5px;
-    box-shadow: 1px 1px 2px 2px #c4c4c4;
-    padding: 20px 7px;
+    padding: 15px 7px;
+    background-color: #fff;
 }
 
 
@@ -80,7 +80,7 @@ main{
     display:inline-block;
     word-break: break-all;
     margin-left: 40px;
-    width: 750px;
+    width: 770px;
 }
 
 .del{
@@ -88,4 +88,5 @@ main{
     height: 40px;
     font-size: 20px;
     float: right;
+    margin-top: -5px;
 }
