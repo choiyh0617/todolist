@@ -73,7 +73,10 @@ inputBtn.addEventListener("click", (event) => {
 
     ch.addEventListener("change", checked);
     del.addEventListener("click", () => {
-      div.remove();
+        const userch = confirm('정말 삭제하실건가요?');
+        if (userch == true){
+            div.remove();
+        }
     });
   }
 });
