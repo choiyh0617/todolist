@@ -4,14 +4,14 @@
 
 body{
     position: relative;
-    background-color: #f7c0f4;
+    background-color: #ffe0e0;
 }
 
 h1{
     width: 1370px;
-    font-size: 80px;
+    font-size: 70px;
     text-align: center;
-    margin: 100px auto 0px auto;
+    margin: 60px auto 0px auto;
 }
 
 header{
@@ -48,16 +48,16 @@ form{
     cursor: pointer;
     border: none;
     color: #000;
+    background-color: #ffa3a3;
 }
 
 main{
-    width: 900px;
-    margin-left: 380px;
+    margin-left: 370px;
     margin-top: 100px;
 }
 
 .ti{
-    width: 960px;
+    width: 980px;
     margin-bottom: 10px;
     border-radius: 5px;
     padding: 15px 7px;
@@ -89,4 +89,7 @@ main{
     font-size: 20px;
     float: right;
     margin-top: -5px;
+    background-color: #ffa3a3;
+    border: none;
+    border-radius: 5px;
 }
