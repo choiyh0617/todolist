@@ -39,6 +39,7 @@ form{
     font-size: 20px;
     outline: none;
     border: none;
+    box-shadow: 1px 1px 10px 1px #dddddd;
 }
 
 #al{
