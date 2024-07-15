@@ -85,7 +85,6 @@ function checked(event) {
   const detail = event.target.nextElementSibling;
   if (event.target.checked) {
     detail.style.textDecoration = "line-through";
-    alert('완료되었습니다.');
   } else {
     detail.style.textDecoration = "none";
   }
