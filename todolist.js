@@ -41,9 +41,9 @@
 //     div.remove();
 // })
 
-const jsonURL ="./todolist.json";
-var json = new XMLHttpRequest();
-json.open("GET", jsonURL);
+// const jsonURL ="./todolist.json";
+// var json = new XMLHttpRequest();
+// json.open("GET", jsonURL);
 
 const input = document.querySelector("#input");
 const inputBtn = document.getElementById("al");
