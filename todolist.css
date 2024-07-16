@@ -98,3 +98,18 @@ main{
     border: none;
     border-radius: 5px;
 }
+
+#all_del{
+    float: right;
+    margin-right: 350px;
+    width: 130px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #000;
+    color: #fff;
+}
+
+#all_del:hover{
+    background-color: #fff;
+    color: #000;
+}
