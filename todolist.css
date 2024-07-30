@@ -8,14 +8,14 @@ body{
 }
 
 h1{
-    width: 700px;
-    font-size: 70px;
-    height: 150px;
+    width: 48.6111vw;
+    font-size: 4.8611vw;
+    height: 10.4167vw;
     line-height: 150px;
     box-shadow: 1px 1px 10px 1px #c0c0c0;
-    border-radius: 10px;
+    border-radius: 0.6944vw;
     text-align: center;
-    margin: 60px auto 0px auto;
+    margin: 4.1667vw auto 0px auto;
 }
 
 header{
