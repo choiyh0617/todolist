@@ -48,6 +48,7 @@
 const input = document.querySelector("#input");
 const inputBtn = document.getElementById("al");
 const list = document.getElementById("ex");
+const all_del = document.querySelector("#all_del");
 
 inputBtn.addEventListener("click", (event) => {
   event.preventDefault();
@@ -93,3 +94,8 @@ function checked(event) {
     detail.style.textDecoration = "none";
   }
 }
+
+all_del.addEventListener('click', () => {
+  const all_ti = document.querySelectorAll('.ti');
+  all_ti.forEach(item => item.remove());
+});
