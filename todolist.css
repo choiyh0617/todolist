@@ -23,20 +23,20 @@ header{
 }
 
 form{
-    width: 1370px;
+    width: 95.1389vw;
     position: relative;
     margin: auto;
 }
 
 #input{
-    width: 800px;
-    height: 50px;
+    width: 55.5556vw;
+    height: 3.4722vw;
     position: absolute;
-    left: 200px;
-    top: 30px;
-    padding-left:20px ;
-    border-radius: 10px;
-    font-size: 20px;
+    left: 13.8889vw;
+    top: 2.0833vw;
+    padding-left:1.3889vw ;
+    border-radius: 0.6944vw;
+    font-size: 1.3889vw;
     outline: none;
     border: none;
     box-shadow: 1px 1px 10px 1px #dddddd;
@@ -44,12 +44,12 @@ form{
 
 #al{
     position: absolute;
-    left: 1040px;
-    top: 30px;
-    width: 150px;
-    height: 53px;
-    font-size: 30px;
-    border-radius: 10px;
+    left: 72.2222vw;
+    top: 2.0833vw;
+    width: 10.4167vw;
+    height: 3.6806vw;
+    font-size: 2.0833vw;
+    border-radius: 0.6944vw;
     cursor: pointer;
     border: none;
     color: #000;
