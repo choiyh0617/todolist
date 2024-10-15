@@ -72,6 +72,7 @@ main{
 
 .list{
     position: relative;
+    margin-left: 20px;
 }
 
 .ch{
