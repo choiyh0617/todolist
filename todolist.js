@@ -97,5 +97,8 @@ function checked(event) {
 
 all_del.addEventListener('click', () => {
   const all_ti = document.querySelectorAll('.ti');
-  all_ti.forEach(item => item.remove());
+  const all_del_al = confirm('모두 삭제하시겠습니까?');
+  if (all_del_al == true) {
+    all_ti.forEach(item => item.remove());
+  }
 });

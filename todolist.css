@@ -101,13 +101,15 @@ main{
 
 #all_del{
     float: right;
-    margin-right: 230px;
-    width: 130px;
-    height: 40px;
+    margin-right: 15.9722vw;
+    width: 9.0278vw;
+    height: 2.7778vw;
     border-radius: 10px;
     background-color: #000;
     color: #fff;
     cursor: pointer;
+    margin-top: 0.6944vw;
+    font-size: 15px;
 }
 
 #all_del:hover{

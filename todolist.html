@@ -6,6 +6,126 @@
     <link rel="icon" href="./img/image.png">
     <title>todolist</title>
     <link rel="stylesheet" href="./todolist.css">
+    <style>
+        *{
+            margin: 0;
+        }
+
+        body{
+            position: relative;
+            /* background-color: #ffe0e0; */
+        }
+
+        h1{
+            width: 48.6111vw;
+            font-size: 4.8611vw;
+            height: 10.4167vw;
+            line-height: 10.4167vw;
+            box-shadow: 1px 1px 10px 1px #c0c0c0;
+            border-radius: 0.6944vw;
+            text-align: center;
+            margin: 4.1667vw auto 0px auto;
+        }
+
+        header{
+            width: 100%;
+        }
+
+        form{
+            width: 95.1389vw;
+            position: relative;
+            margin: auto;
+        }
+
+        #input{
+            width: 55.5556vw;
+            height: 3.4722vw;
+            position: absolute;
+            left: 13.8889vw;
+            top: 2.0833vw;
+            padding-left:1.3889vw ;
+            border-radius: 0.6944vw;
+            font-size: 1.3889vw;
+            outline: none;
+            border: none;
+            box-shadow: 1px 1px 10px 1px #dddddd;
+        }
+
+        #al{
+            position: absolute;
+            left: 72.2222vw;
+            top: 2.0833vw;
+            width: 10.4167vw;
+            height: 3.6806vw;
+            font-size: 2.0833vw;
+            border-radius: 0.6944vw;
+            cursor: pointer;
+            border: none;
+            color: #000;
+            /* background-color: #ffa3a3; */
+        }
+
+        main{
+            margin-left: 250px;
+            margin-top: 100px;
+        }
+
+        .ti{
+            width: 980px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            padding: 15px 7px;
+            background-color: #fff;
+        }
+
+
+        .list{
+            position: relative;
+        }
+
+        .ch{
+            width: 25px;
+            height: 25px;
+            position: absolute;
+        }
+
+        .detail{
+            font-size: 25px;
+            display:inline-block;
+            word-break: break-all;
+            margin-left: 40px;
+            width: 770px;
+        }
+
+        .del{
+            width: 60px;
+            height: 40px;
+            font-size: 20px;
+            float: right;
+            margin-top: -5px;
+            /* background-color: #ffa3a3; */
+            border: none;
+            border-radius: 5px;
+        }
+
+        #all_del{
+            float: right;
+            margin-right: 15.9722vw;
+            width: 9.0278vw;
+            height: 2.7778vw;
+            border-radius: 10px;
+            background-color: #000;
+            color: #fff;
+            cursor: pointer;
+            margin-top: 0.6944vw;
+            font-size: 15px;
+        }
+
+        #all_del:hover{
+            background-color: #fff;
+            color: #000;
+        }
+    </style>
 </head>
 
 <body>
@@ -20,10 +140,116 @@
 
     <main>
         <div id="ex" class="list">
-        <!-- </div> -->
-        <!-- <button id="all_del">모두 삭제하기</button> -->
+        </div>
+        <button id="all_del">모두 삭제하기</button>
     </main>
     
 </body>
 <script src="./todolist.js"></script>
+<script>
+        // const form = document.querySelector('form');
+    // const input = document.querySelector('input');
+
+    // form.addEventListener('submit', (event) => {
+    //     event.preventDefault();
+    //     const div = document.createElement('div');
+    //     const span = document.createElement('span');
+    //     const newdel = document.createElement('button');
+    //     const newch = document.createElement('input');
+    //     newch.type = 'checkbox';
+    //     const txt = document.createTextNode(input.value);
+    //     const deltxt= document.createTextNode('삭제');
+    //     newch.className += 'ch';
+    //     newdel.className += 'del';
+    //     span.className +='detail';
+    //     span.appendChild(txt);
+    //     newdel.appendChild(deltxt);
+    //     div.appendChild(newch);
+    //     div.appendChild(span);
+    //     div.appendChild(newdel);
+    //     div.className += 'ti';
+    //     document.body.appendChild(div);
+    //     input.value = '';
+    // })
+
+    // const del = document.querySelector('.del');
+    // const ch = document.querySelector('.ch');
+    // const div = document.querySelector('.ti');
+    // const detail = document.querySelector('.detail');
+
+    // ch.addEventListener('change', checked);
+    // function checked() {
+    //     if (ch.checked) {
+    //         detail.style.textDecoration = 'line-through';
+    //     } else {
+    //         detail.style.textDecoration = 'none';
+    //     }
+    // }
+
+    // del.addEventListener('click',()=>{
+    //     div.remove();
+    // })
+
+    // const jsonURL ="./todolist.json";
+    // var json = new XMLHttpRequest();
+    // json.open("GET", jsonURL);
+
+    const input = document.querySelector("#input");
+    const inputBtn = document.getElementById("al");
+    const list = document.getElementById("ex");
+    const all_del = document.querySelector("#all_del");
+
+    inputBtn.addEventListener("click", (event) => {
+    event.preventDefault();
+    const toDo = input.value.trim();
+    if (toDo !== "") {
+        const div = document.createElement("div");
+        div.classList.add("ti");
+
+        const ch = document.createElement("input");
+        ch.setAttribute("type", "checkbox");
+        ch.classList.add("ch");
+
+        const detail = document.createElement("span");
+        detail.textContent = toDo;
+        detail.classList.add("detail");
+
+        const del = document.createElement("button");
+        del.textContent = "삭제";
+        del.classList.add("del");
+
+        div.appendChild(ch);
+        div.appendChild(detail);
+        div.appendChild(del);
+
+        list.appendChild(div);
+        input.value = "";
+
+        ch.addEventListener("change", checked);
+        del.addEventListener("click", () => {
+            const userch = confirm('정말 삭제하실건가요?');
+            if (userch == true){
+                div.remove();
+            }
+        });
+    }
+    });
+
+    function checked(event) {
+    const detail = event.target.nextElementSibling;
+    if (event.target.checked) {
+        detail.style.textDecoration = "line-through";
+    } else {
+        detail.style.textDecoration = "none";
+    }
+    }
+
+    all_del.addEventListener('click', () => {
+    const all_ti = document.querySelectorAll('.ti');
+    const all_del_al = confirm('모두 삭제하시겠습니까?');
+    if (all_del_al == true) {
+        all_ti.forEach(item => item.remove());
+    }
+    });
+</script>
 </html>
